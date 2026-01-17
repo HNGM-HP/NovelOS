@@ -596,7 +596,15 @@ assets/{project_id}/chapter_{chapter_no}/v{version}.md
 | `config/intent_router_llm_cfg.json` | 意图识别模型配置 |
 
 ---
+本地运行
+运行流程
+bash scripts/local_run.sh -m flow
 
-**交付日期**: 2024-12-XX
+运行节点
+bash scripts/local_run.sh -m node -n node_name
+
+启动HTTP服务
+bash scripts/http_run.sh -m http -p 5000
+
+**交付日期**: 2026-01-17
 **版本**: v1.0.0
-**作者**: NovelOS 开发团队
