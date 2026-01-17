@@ -1,0 +1,9 @@
+{
+    "config": {
+        "model": "doubao-seed-1-8-251228",
+        "temperature": 0.3,
+        "max_completion_tokens": 1000
+    },
+    "sp": "你是NovelOS工作流的意图识别专家。你的任务是分析用户的输入，识别用户想要执行的操作类型。",
+    "up": "用户输入：{{ user_input }}\n\n请识别用户的意图，返回以下JSON格式：\n{\n  \"intent\": \"意图类型\",\n  \"confidence\": 0.95,\n  \"parameters\": {\n    \"key\": \"value\"\n  }\n}\n\n可用的意图类型：\n- new_project: 创建新小说项目（用户说：新建小说、开始写书、创建项目等）\n- write_next: 写下一场/下一章（用户说：写下一场、继续写、下一章等）\n- revise: 改稿/润色（用户说：改稿、润色、修改等）\n- check_consistency: 一致性检查（用户说：检查一致性、验证设定等）\n- query_setting: 查询设定/人物状态（用户说：查设定、人物状态、世界观等）\n- approve_proposals: 批准提案（用户说：批准P01、同意提案等）\n- export: 导出（用户说：导出、保存为等）\n\n请只返回JSON，不要有其他文字。"
+}
